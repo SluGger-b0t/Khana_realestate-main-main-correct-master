@@ -1,0 +1,112 @@
+/* src/components/Specification.css */
+.specification {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.specification>h2{
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.specification table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.specification table, .specification th, .specification td {
+  border: 1px solid #ccc;
+}
+
+.specification thead{
+    background-color: #bb8a0a;
+}
+
+.specification th, .specification td {
+  padding: 10px;
+  text-align: left;
+}
+
+.amenities {
+  margin-top: 20px;
+}
+
+.amenities > h2 {
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ame ul {
+  flex: 1;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .property-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .property-image {
+    width: 100%;
+  }
+
+  .prop > div {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  .details h2 {
+    font-size: 18px;
+  }
+
+  .ame {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ame ul {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .property-details {
+    padding: 10px;
+  }
+
+  .details h2 {
+    font-size: 16px;
+  }
+
+  .details h3 {
+    font-size: 14px;
+  }
+
+  .det-p {
+    font-size: 14px;
+  }
+
+  .prop > div {
+    flex: 1 1 100%;
+    margin-bottom: 8px;
+  }
+
+  .ame ul {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
