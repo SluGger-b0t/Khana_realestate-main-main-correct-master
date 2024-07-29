@@ -13,8 +13,10 @@ const Philosophy = () => {
       />
       <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center p-4">
         <p className="text-lg md:text-base text-xs md:px-20 md:pb-6 opacity-80">
-          <span className="block">PHILOSOPHY At KHANNA REALESTATE</span>
-          <span className="block">
+          <span className="block text-2xl font-bold">
+            PHILOSOPHY At KHANNA REALESTATE
+          </span>
+          <span className="block text-lg mt-2">
             We have always strived for benchmark quality, customer-centric
             approach, robust engineering, in-house research, uncompromising
             business ethics, timeless values, and transparency in all spheres of
