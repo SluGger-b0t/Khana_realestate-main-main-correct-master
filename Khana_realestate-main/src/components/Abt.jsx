@@ -49,7 +49,7 @@ function Abt() {
           <h2 className="head ">PASSION AT WORK</h2>
         </div>
         <div
-          className="container w-full h-80 overflow-auto scrollable-text overflow-auto max-h-80 md:mt-6 md:mx-6"
+          className="container w-full h-80 scrollable-text overflow-auto max-h-80 md:mt-6"
           id="abttxt"
         >
           Khanna Real Estate Solutions is a customer-centric consultancy,
