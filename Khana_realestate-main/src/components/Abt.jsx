@@ -48,7 +48,10 @@ function Abt() {
         <div className=" ">
           <h2 className="head ">PASSION AT WORK</h2>
         </div>
-        <div className="container w-full h-80 overflow-auto" id="abttxt">
+        <div
+          className="container w-full h-80 overflow-auto scrollable-text overflow-auto max-h-80 md:mt-6 md:mx-6"
+          id="abttxt"
+        >
           Khanna Real Estate Solutions is a customer-centric consultancy,
           committed to redefining your real estate experience. What sets us
           apart is our unwavering dedication to prioritizing your needs. With a
@@ -58,11 +61,11 @@ function Abt() {
           value-driven success. At Khanna Real Estate Solutions, your
           satisfaction is not just a goal – it's our commitment.
           <br />
-          <br /> 
-          Khanna Real Estate Solutions is a premier consultancy firm specializing in
-          residential and commercial real estate. Our dedicated team provides
-          expert guidance, personalized strategies, and market insights to
-          empower clients in making informed decisions. 
+          <br />
+          Khanna Real Estate Solutions is a premier consultancy firm
+          specializing in residential and commercial real estate. Our dedicated
+          team provides expert guidance, personalized strategies, and market
+          insights to empower clients in making informed decisions.
         </div>
         <div className=" ">
           <button
