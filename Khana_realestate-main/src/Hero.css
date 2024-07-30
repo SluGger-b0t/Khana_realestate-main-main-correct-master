@@ -11,20 +11,19 @@ body, html {
   margin: 0px;
 }
 
-#carouselExampleIndicators{
-    margin: 0px;
-    padding: 0px;
-    /* width: 100%; */
-    left: 0px;
+#carouselExampleIndicators {
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
 }
 
 .carousel-item {
   height: 100vh;
   min-height: 300px;
-  /* width: 100%; */
 }
+
 .carousel-inner {
-  height: 100%; /* Ensure carousel inner container takes full height */
+  height: 100%;
 }
 
 .carousel-caption {
@@ -110,4 +109,53 @@ body, html {
     padding: 10px 15px;
     font-size: 15px;
   }
+}
+
+/* Adjust the positioning of the previous and next arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  
+}
+
+.carousel-control-prev {
+  left: 0px;
+}
+
+.carousel-control-next {
+  left: 90%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20%;
+  /* height: 100%; */
+  /* background-size: 100%, 100%; */
+}
+
+/* Contact Us Form Styling */
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form-container p {
+  margin-bottom: 16px;
+}
+
+.contact-form-container select,
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form-container button {
+  width: 100%;
+  padding: 12px;
+ 
 }

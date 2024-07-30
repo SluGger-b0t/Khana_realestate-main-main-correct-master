@@ -191,24 +191,24 @@ const SubmitProperty = () => {
     <>
       <div>
         <Link to="/">
-          <div className="w-fit z-50 h-fit absolute top-0 left-1/2 transform -translate-x-1/2 ">
+          <div className="absolute w-fit z-50 h-fit top-0 left-1/2 transform -translate-x-1/2">
             <img src={Logo} alt="" className="w-24   z-50  " />
           </div>
         </Link>
       </div>
-      <div className="sticky top-0   w-full h-30 z-10" id="navbar">
+      <div className="absolute top-0 w-full h-30 z-10" id="navbar">
         <Navbar></Navbar>
       </div>
-      <header className="header -mt-28">
-        <div className="flex flex-col items-center justify-center h-screen relative">
+      <header className="header m-0 p-0 -mt-28">
+        <div className="relative w-full h-screen">
           <img
-            className="object-cover w-full h-full z-24"
+            className="absolute inset-0 object-cover w-full h-full"
             src={a}
             alt="Full screen"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center p-4">
             <p className="text-lg md:text-base text-xs md:px-20 md:pb-6 opacity-60">
-              <span className="block">SUBMIT PROPERTY</span>
+              <span className="block text-2xl font-bold">SUBMIT PROPERTY</span>
             </p>
           </div>
         </div>
@@ -463,7 +463,7 @@ const SubmitProperty = () => {
         )}
       </div>
     </>
-  );
+  )
 }
 
 export default SubmitProperty

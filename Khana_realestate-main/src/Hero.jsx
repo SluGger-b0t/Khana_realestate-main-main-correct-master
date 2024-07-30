@@ -108,16 +108,18 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        <div className="pn">
         <button
           className="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide="prev"
-        >
+          >
           <span
             className="carousel-control-prev-icon"
             aria-hidden="true"
-          ></span>
+            ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
@@ -129,9 +131,10 @@ const Hero = () => {
           <span
             className="carousel-control-next-icon"
             aria-hidden="true"
-          ></span>
+            ></span>
           <span className="visually-hidden">Next</span>
         </button>
+        </div>
       </div>
     </div>
   )

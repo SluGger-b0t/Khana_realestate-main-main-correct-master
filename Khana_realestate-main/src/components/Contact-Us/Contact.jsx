@@ -48,14 +48,18 @@ console.log(formData)
           </div>
         </Link>
       </div>
-      <div className="sticky top-0   w-full h-30 z-10" id="navbar">
+      <div className="absolute top-0  w-full h-30 z-10" id="navbar">
         <Navbar></Navbar>
       </div>
-      <div className="-mt-24 flex flex-col items-center justify-center md:h-screen">
-        <img className="object-cover w-full h-full" src={a} alt="Full screen" />
-        <div className="-mt-12  sm:-mt-16 md:absolute  md:bottom-0 md:left-0 md:right-0 bg-black bg-opacity-50 text-white text-center p-4">
-          <p className=" md:text-3xl sm:text-xl  text-[8px] md:px-20 md:pb-6">
-            CONTACT US
+      <div className="flex flex-col items-center justify-center h-screen relative">
+        <img
+          className="object-cover w-full h-full z-24 "
+          src={a}
+          alt="Full screen"
+        />
+        <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center p-4">
+          <p className="text-lg md:text-base text-xs md:px-20 md:pb-6 opacity-60">
+            <span className="block text-2xl font-bold">CONTACT US</span>
           </p>
         </div>
       </div>
@@ -77,7 +81,7 @@ console.log(formData)
           <select
             onChange={handleInputChange}
             name="sub"
-            className=" block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-white border-4 border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
+            className="text-lg block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-white border-4 border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
           >
             <option>Select Option</option>
             <option>Buying Property</option>
@@ -94,7 +98,7 @@ console.log(formData)
             value={formData.name}
             placeholder="Name"
             onChange={handleInputChange}
-            className="block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
+            className=" text-lg block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
           />
         </div>
         {/* Email Input */}
@@ -105,7 +109,7 @@ console.log(formData)
             name="email"
             value={formData.email}
             placeholder="Email"
-            className="block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-whitebg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
+            className="text-lg block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-whitebg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
           />
         </div>
         {/* Location Input */}
@@ -116,7 +120,7 @@ console.log(formData)
             name="location"
             value={formData.location}
             placeholder="Location"
-            className="block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-whitebg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
+            className="text-lg block w-full focus:border-b-slate-950 focus:scale-105 duration-1000 sm:w-1/2 bg-whitebg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
           />
         </div>
         {/* Contact Number Input */}
@@ -127,7 +131,7 @@ console.log(formData)
             onChange={handleInputChange}
             name="number"
             placeholder="Contact Number"
-            className="block w-full sm:w-1/2 focus:border-b-slate-950 focus:scale-105 duration-1000 bg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
+            className="text-lg block w-full sm:w-1/2 focus:border-b-slate-950 focus:scale-105 duration-1000 bg-white border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none "
           />
         </div>
         {/* Message Textarea */}
@@ -137,14 +141,14 @@ console.log(formData)
             name="msg"
             value={formData.msg}
             placeholder="Message"
-            className="block w-full sm:w-1/2 bg-white  border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none focus:border-b-slate-950 focus:scale-105 duration-1000"
+            className="text-lg block w-full sm:w-1/2 bg-white  border-4  border-gray-400 border-t-transparent border-r-transparent  border-l-transparent rounded-md py-2 px-4 focus:outline-none focus:border-b-slate-950 focus:scale-105 duration-1000"
           ></textarea>
         </div>
         {/* Submit Button */}
         <div className="flex justify-center p-4">
           <button
             onClick={submitHandler}
-            className=" sm:w-52 bg-black hover:bg-stone-800 hover:scale-110 duration-150 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="text-lg sm:w-52 bg-black hover:bg-stone-800 hover:scale-110 duration-150 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>
@@ -152,7 +156,7 @@ console.log(formData)
       </div>
       <Footer></Footer>
     </div>
-  );
+  )
 };
 
 export default Contact;
