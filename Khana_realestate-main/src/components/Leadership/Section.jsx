@@ -11,11 +11,11 @@ const Section = () => {
         id="section-1"
         className="mt-10 flex flex-col md:flex-row  sm:h-[600px]  bg-lightblue"
       >
-        <div className="md:w-1/2 sm:w-1/2  mx-auto flex justify-center md:justify-center ">
+        <div className="md:w-1/2 flex justify-center md:order-2 h-3/4 ">
           <img
             src={a}
             alt="Image"
-            className="sm:mx-16 sm:w-3/5 sm:h-fit h-[400px] md:h-[500px]  md:ml-20 hover:scale-105 duration-150"
+            className="sm:w-2/3 hover:scale-95  duration-150 w-full h-full scale-90"
           />
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0 md:pl-4 ml-5 ">

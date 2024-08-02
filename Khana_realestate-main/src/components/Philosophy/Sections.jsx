@@ -17,7 +17,7 @@ const Sections = () => {
           <img
             src={a}
             alt="Image"
-            className="sm:mx-16 sm:w-full md:ml-20 hover:scale-105 duration-150"
+            className="sm:w-full hover:scale-95  duration-150 w-full h-full scale-90 "
           />
         </div>
         <div className="md:w-1/2 mt-10 md:mt-0 md:pl-4 ml-5 ">
@@ -45,7 +45,7 @@ const Sections = () => {
               capacities to innovate and use of technology to create immense
               value for all our stakeholders. We will continue to raise the bar
               and set new standards in the industry to strengthen this goal of
-              ours.{" "}
+              ours.{' '}
             </p>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Sections = () => {
         {/* Text */}
         <div className="md:w-1/2 mt-10 md:mt-0 md:pl-4 ml-5 ">
           <div className="text-3xl flex justify-center font-light">
-            {" "}
+            {' '}
             OUR WAY
           </div>
           <p
@@ -124,7 +124,7 @@ const Sections = () => {
       </div>
       <Fotter></Fotter>
     </div>
-  );
+  )
 }
 
 export default Sections

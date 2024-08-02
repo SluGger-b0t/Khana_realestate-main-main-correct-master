@@ -2,8 +2,9 @@
   /* padding: 5rem; */
   background-color: black 0;
   /* display: flex; */
-  left: 1px;
-  left: 10px;
+  /* left: 1px;
+  left: 10px; */
+  margin: auto;
   color: white;
   margin-top: 40px;
   padding-bottom: 20px;
@@ -34,9 +35,21 @@
   color: rgb(134, 130, 130) !important;
   font-size: 1rem !important;
   top: 2rem !important;
+  
 }
 
-.slick-prev:before,
+.slick-prev:before
+ {
+  font-family: 'slick';
+  font-size: 24px;
+  line-height: 1;
+  opacity: 0.75;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 0px;
+}
+
 .slick-next:before {
   font-family: 'slick';
   font-size: 24px;
@@ -44,4 +57,7 @@
   opacity: 0.75;
   color: black;
   -webkit-font-smoothing: antialiased;
+  position: relative;
+  left: 1460px;
+  /* right: 0px; */
 }

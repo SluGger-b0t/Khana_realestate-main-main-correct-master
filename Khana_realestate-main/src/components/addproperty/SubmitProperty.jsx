@@ -191,7 +191,7 @@ const SubmitProperty = () => {
     <>
       <div>
         <Link to="/">
-          <div className="absolute w-fit z-50 h-fit top-0 left-1/2 transform -translate-x-1/2">
+          <div className="sticky w-fit z-50 h-fit top-0 left-1/2 transform -translate-x-1/2">
             <img src={Logo} alt="" className="w-24   z-50  " />
           </div>
         </Link>
@@ -200,7 +200,7 @@ const SubmitProperty = () => {
         <Navbar></Navbar>
       </div>
       <header className="header m-0 p-0 -mt-28">
-        <div className="relative w-full h-screen">
+        <div className="relative w-full h-screen -mt-28">
           <img
             className="absolute inset-0 object-cover w-full h-full"
             src={a}
@@ -247,6 +247,7 @@ const SubmitProperty = () => {
                     Residential Studio Apartment
                   </option>
                   <option value="Residential Studio Apartment">Villa</option>
+                  <option value="Land">Land</option>
                   {/* Add options */}
                 </select>
               </div>

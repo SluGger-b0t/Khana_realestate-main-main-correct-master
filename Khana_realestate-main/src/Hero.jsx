@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={image1} className="d-block w-100" alt="Slide 1" />
+            <img src={image2} className="d-block w-100" alt="Slide 1" />
             <div className="carousel-caption">
               <h5
                 className="animated bounceInRight"
@@ -51,7 +51,7 @@ const Hero = () => {
                 className="animated bounceInLeft d-none d-md-block"
                 style={{ animationDelay: '2s' }}
               >
-                with a good and calm background
+                where Memories Begin
               </p>
               <p
                 className="animated bounceInRight"
@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={image2} className="d-block w-100" alt="Slide 2" />
+            <img src={image1} className="d-block w-100" alt="Slide 2" />
             <div className="carousel-caption">
               <h5
                 className="animated bounceInRight"
@@ -110,30 +110,30 @@ const Hero = () => {
         </div>
 
         <div className="pn">
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
           >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
             ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
             ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import "./FeaturedProjects.css";
-import axios from "axios";
-import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
+import React, { useEffect, useState } from 'react'
+import './FeaturedProjects.css'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom' // Import useNavigate from react-router-dom
 
 const ProjectCard = ({
   _id,
@@ -11,77 +11,82 @@ const ProjectCard = ({
   location,
   area,
   bedroom,
+  propertyType,
 }) => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleSeeDetails = () => {
-    navigate(`/project/${_id}`);
-  };
+    navigate(`/project/${_id}`)
+  }
 
   return (
     <div className="project-card">
       <div className="project-image">
         <img
-          src={image || "https://via.placeholder.com/300"}
+          src={image || 'https://via.placeholder.com/300'}
           alt={buildingName}
         />
         <span className="featured-tag">FEATURED</span>
       </div>
       <div className="project-price">{price}</div>
-      <h3 className="project-title">{buildingName}</h3>
+      <h3 className="project-title">
+        {propertyType === 'Land' ? 'Land' : buildingName}
+      </h3>
       <p className="project-location">{location}</p>
       <div className="project-details">
+        <div className="area">
         <span>AREA</span>
-        <span>BEDROOM</span>
-        <span>{area}</span>
-        <span>{bedroom}</span>
+        <span className='sub'>{area}</span>
+        </div>
+        {propertyType !== 'Land' && <span>BEDROOM</span>}
+        {propertyType !== 'Land' && <span className='sub'>{bedroom}</span>}
       </div>
       <button className="see-details-btn" onClick={handleSeeDetails}>
         SEE DETAILS
       </button>
     </div>
-  );
-};
+  )
+}
 
 const FeaturedProjects = () => {
-  const [projects, setProjects] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = 3;
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [projects, setProjects] = useState([])
+  const [currentPage, setCurrentPage] = useState(1)
+  const projectsPerPage = 6
+  const navigate = useNavigate() // Initialize useNavigate
 
   // Calculate the current projects to display
-  const indexOfLastProject = currentPage * projectsPerPage;
-  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const indexOfLastProject = currentPage * projectsPerPage
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage
   const currentProjects = projects.slice(
     indexOfFirstProject,
     indexOfLastProject
-  );
+  )
 
   // Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
-  const pageNumbers = [];
+  const pageNumbers = []
   for (let i = 1; i <= Math.ceil(projects.length / projectsPerPage); i++) {
-    pageNumbers.push(i);
+    pageNumbers.push(i)
   }
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/getProperty");
-        setProjects(response.data);
-        console.log(response.data);
+        const response = await axios.get('http://localhost:5000/getProperty')
+        setProjects(response.data)
+        console.log(response.data)
       } catch (error) {
-        console.error("Error fetching the projects", error);
+        console.error('Error fetching the projects', error)
       }
-    };
+    }
 
-    fetchProjects();
-  }, []);
+    fetchProjects()
+  }, [])
 
   const handleAddProperty = () => {
-    navigate("/addproperty");
-  };
+    navigate('/addproperty')
+  }
 
   return (
     <div className="featured-projects">
@@ -108,7 +113,7 @@ const FeaturedProjects = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FeaturedProjects;
+export default FeaturedProjects

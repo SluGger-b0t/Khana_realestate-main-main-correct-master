@@ -68,12 +68,12 @@ function Abt() {
           insights to empower clients in making informed decisions.
         </div>
         <div className=" ">
-          <button
+          {/* <button
             class="w-36 my-4 py-2 bg-transparent hover:bg-slate-600 text-gray-700 font-semibold hover:text-white px-4 border border-black hover:border-transparent rounded"
             id="btn"
           >
             Read More
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

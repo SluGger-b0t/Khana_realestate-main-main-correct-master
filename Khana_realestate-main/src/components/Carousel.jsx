@@ -27,27 +27,27 @@ const Carousel = () => {
 
   return (
     <>
-    <div className="relative" id="carcont">
-      <button className="" onClick={prevSlide}>
-        Prev
-      </button>
-      <button
-        className="absolute top-1/2 right-2 transform -translate-y-1/2"
-        onClick={nextSlide}
+      <div className="relative" id="carcont">
+        {/* <button className="" onClick={prevSlide}>
+          Prev
+        </button>
+        <button
+          className="absolute top-1/2 right-2 transform -translate-y-1/2"
+          onClick={nextSlide}
         >
-        Next
-      </button>
-      <div className="flex justify-center items-center">
-        {photos.slice(currentIndex, currentIndex + 3).map((photo, index) => (
-          <img
-          key={index}
-          className="mx-2"
-          src={photo}
-          alt={`Photo ${index}`}
-          />
-        ))}
+          Next
+        </button> */}
+        <div className="flex justify-center items-center">
+          {photos.slice(currentIndex, currentIndex + 3).map((photo, index) => (
+            <img
+              key={index}
+              className="mx-2"
+              src={photo}
+              alt={`Photo ${index}`}
+            />
+          ))}
+        </div>
       </div>
-    </div>
       <Footer></Footer>
     </>
   )

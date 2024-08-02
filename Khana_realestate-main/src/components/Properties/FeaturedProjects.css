@@ -16,6 +16,15 @@
   gap: 16px;
 }
 
+.sub{
+  color: #6f6f6f;
+}
+
+.area{
+  display: flex;
+  flex-direction: column;
+}
+
 .heading-featured {
   font-size: 30px;
   font-weight: 300;

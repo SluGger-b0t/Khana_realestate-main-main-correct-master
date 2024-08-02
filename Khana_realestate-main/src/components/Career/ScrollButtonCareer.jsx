@@ -5,13 +5,14 @@ const ScrollButtonCareer = () => {
   const [activeButton, setActiveButton] = useState(null)
 
   const handleClick = (buttonId) => {
-    const section = document.getElementById(`section-${buttonId}`)
-    window.scrollTo({
-      top: section.offsetTop,
-      behavior: 'smooth',
-    })
-    setActiveButton(buttonId)
+  const section = document.getElementById(`section-${buttonId}`);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.error(`Section with id section-${buttonId} not found`);
   }
+  setActiveButton(buttonId);
+};
 
   return (
     <div className="mt-10 flex  flex-row   justify-center">

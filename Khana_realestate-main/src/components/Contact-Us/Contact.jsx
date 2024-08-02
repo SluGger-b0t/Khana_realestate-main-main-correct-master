@@ -43,7 +43,7 @@ console.log(formData)
     <div>
       <div>
         <Link to="/">
-          <div className="w-fit z-50 h-fit absolute top-0 left-1/2 transform -translate-x-1/2 ">
+          <div className="w-fit z-50 h-fit sticky top-0 left-1/2 transform -translate-x-1/2 ">
             <img src={Logo} alt="" className="w-24   z-50  " />
           </div>
         </Link>
@@ -51,7 +51,7 @@ console.log(formData)
       <div className="absolute top-0  w-full h-30 z-10" id="navbar">
         <Navbar></Navbar>
       </div>
-      <div className="flex flex-col items-center justify-center h-screen relative">
+      <div className="flex flex-col items-center justify-center h-screen relative -mt-28">
         <img
           className="object-cover w-full h-full z-24 "
           src={a}

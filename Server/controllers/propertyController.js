@@ -36,7 +36,7 @@ const createProperty = async (req, res) => {
     const newProperty = new Property({
       status,
       propertyType,
-      price: Number(price),
+      price: price,
       area: Number(area),
       plotArea: Number(plotArea),
       bedroom: Number(bedroom),
