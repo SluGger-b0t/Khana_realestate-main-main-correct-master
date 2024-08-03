@@ -17,6 +17,7 @@ function Carousel() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: false, // Disable the arrows
     initialSlide: 0,
     responsive: [
       {
@@ -45,31 +46,32 @@ function Carousel() {
       },
     ],
   }
+
   return (
     <>
-      <div className="carousel px-8 ">
-        <Slider {...settings} className="w-full ">
-          <div className="box ">
-            <img className="" src={img1} alt="Not Found" />
+      <div className="carousel px-8">
+        <Slider {...settings} className="w-full">
+          <div className="box">
+            <img src={img1} alt="Not Found" />
           </div>
           <div className="box">
-            <img src={img2} className="" alt="Not Found" />
+            <img src={img2} alt="Not Found" />
           </div>
           <div className="box">
             <img src={img3} alt="Not Found" />
           </div>
           <div className="box">
-            <img src={img4} className="" alt="Not Found" />
+            <img src={img4} alt="Not Found" />
           </div>
           <div className="box">
-            <img src={img5} className="" alt="Not Found" />
+            <img src={img5} alt="Not Found" />
           </div>
         </Slider>
         <br />
         <br />
         <br />
       </div>
-      <Footer></Footer>
+      <Footer />
     </>
   )
 }
