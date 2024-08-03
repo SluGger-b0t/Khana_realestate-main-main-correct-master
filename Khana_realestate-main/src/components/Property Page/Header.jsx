@@ -5,6 +5,7 @@ import axios from 'axios'
 import placeholderImage from '../../tt.jpg' // Replace with your placeholder image path
 import Navbar from '../Navbar'
 import Logo from '../../components/lg2.png'
+import p1 from'../Property Page/p1.jpg'
 
 const Header = () => {
   const [property, setProperty] = useState(null)
@@ -47,7 +48,7 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center h-screen relative">
           <img
             className="object-cover w-full h-full z-24"
-            src={property.imageUrl || placeholderImage} // Use property image URL or placeholder
+            src={property.imageUrl || p1} // Use property image URL or placeholder
             alt="Full screen"
           />
           <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center p-4">
